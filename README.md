@@ -1,7 +1,7 @@
 ## Getting Started
 Clone the project:
 ```
-$ git clone https://github.com/tanlitung388/tanlitung.github.io.git
+$ git clone https://github.com/tanlitung/tanlitung.github.io.git
 ```
 
 ## Place your own CV
