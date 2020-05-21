@@ -695,49 +695,52 @@
           <div class="contact-mf">
             <div id="contact" class="box-shadow-full">
               <div class="row">
-                <!-- <div class="col-md-6">
+                <div class="col-md-6">
                   <div class="title-box-2">
                     <h5 class="title-left">
-                      Send Me A Message
+                      Drop A Message
                     </h5>
                   </div>
                   <div>
-                      <form action="" method="post" role="form" class="contactForm">
+                      <!--Update the URL for thank you page on form submit -->
+                      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {resetForm()}"></iframe> 
+                      <form id="my-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdBN0qWJDejvTlyAYZ2n0cmlymkzh02R8DrLvuXtD5uKz4C1A/formResponse" method="post" target="hidden_iframe" role="form" class="contactForm" onsubmit="return validateForm();">
                       <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage"></div>
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input required type="text" name="entry.2028344860" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                             <div class="validation"></div>
                           </div>
                         </div>
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input required type="text" class="form-control" name="entry.442110597" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                             <div class="validation"></div>
                           </div>
                         </div>
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <input required type="text" class="form-control" name="entry.625943190" id="subject" placeholder="Subject" data-rule="minlen:8" data-msg="Please enter at least 8 chars of subject" />
                               <div class="validation"></div>
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <textarea required class="form-control" name="entry.1079366484" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                             <div class="validation"></div>
                           </div>
                         </div>
                         <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          <button type="submit" name="submit" class="button button-a button-big button-rouded">Send Message</button>
                         </div>
+
                       </div>
                     </form>
                   </div>
-                </div> -->
-                <div class="col-md-12">
+                </div>
+                <div class="col-md-6">
                   <div class="title-box-2 pt-4 pt-md-0">
                     <h5 class="title-left">
                       Contact Me
@@ -775,12 +778,6 @@
             <div class="copyright-box">
               <p class="copyright">&copy; Copyright <strong>Tan Li Tung 2020</strong>. All Rights Reserved</p>
               <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> and Tan Li Tung
               </div>
             </div>
@@ -810,6 +807,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/formValidate.js"></script>
 
 </body>
 </html>
