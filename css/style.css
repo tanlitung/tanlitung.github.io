@@ -693,6 +693,10 @@ a:hover {
 //--//-->   SERVICES
 ======================================*/
 
+#service{
+  padding-top: 60px;
+}
+
 .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;

@@ -22,7 +22,7 @@ function validateEmail () {
 }
 
 function resetForm() {
-  document.getElementById('my-form').reset();
+  document.getElementById('contact-form').reset();
   console.log('Reset');
 }
 
